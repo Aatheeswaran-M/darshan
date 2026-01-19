@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Darshan S ">
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu -->
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+
+    <!-- Profile Image Section -->
+    <section class="profile">
+        <img src="images/main.jpg" alt="Profile Image" class="main">
+        <h2>Darshan S</h2>
+        <p>Web devoloper | UI/UX Expert | Illustrator</p>
+    </section>
+
+   
+   
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Be Positive and Believe</h1>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <h1>About Me</h1>
+        <img src="images/logo.jpg" alt="Profile Image">
+        <p>I create <span class="highlight">products</span>, not just art.</p>
+        <p>
+            I am a <span class="highlight">creative designer</span> passionate about crafting 
+            visually stunning and user-friendly experiences. Specializing in 
+            <span class="highlight">Web Development</span>, <span class="highlight">UI/UX</span>, 
+            branding, and digital illustration, I transform ideas into impactful designs that help 
+            brands stand out and connect with their audience effectively.
+        </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="portfolio" class="portfolio">
+        <h1>Projects</h1>
+        <div class="portfolio-grid">
+            <div class="project">
+                <img src="images/Calculator Web App _ Search by Muzli.jpg" alt="Minimalism">
+                <h3>Calculator</h3>
+                <p>Html,Css and javascript with Responsive design </p>
+            </div>
+            <div class="project">
+                <img src="images/Tic Tac Toe.jpg" alt="Abstract Art">
+                <h3>Tic Toe Game using Html and javascript</h3>
+                <p>Illustration & 3D Graphics</p>
+            </div>
+            <div class="project">
+                <img src="assets/images/modern-bg.jpg" alt="Modern BG">
+                <h3>Modern BG</h3>
+                <p>Illustration & 3D Design</p>
+            </div>
+            
+        </div>
+        <a href="#" class="see-more">See More Work...</a>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificate-container">
+            <div class="certificate">
+                <img src="images/cer1.jpg" alt="Certificate 1">
+                <h3>GPT Advance Course</h3>
+                <p>Completed from Great Learning (2024)</p>
+            </div>
+            <div class="certificate">
+                <img src="images/cer2.jpg" alt="Certificate 2">
+                <h3>UI/UX Design Mastery</h3>
+                <p>Certified by Google UX Design (2023)</p>
+            </div>
+            <div class="certificate">
+                <img src="images/cer3.jpg" alt="Certificate 3">
+                <h3>Full Stack Web Development</h3>
+                <p>Completed from Udemy (2023)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h1>Education</h1>
+        <div class="education-container">
+            <div class="education-item">
+                <h3>2020 - 2021</h3>
+                <p><b>SRI NEHRU VIDHYALAYA MHSS</b> (SSLC)</p>
+            </div>
+            <div class="education-item">
+                <h3>2022 - 2023</h3>
+                <p><b>SRI NEHRU VIDHYALAYA MHSS</b> (HSC)</p>
+            </div>
+            <div class="education-item">
+                <h3>2023 - 2024</h3>
+                <p><b>Nallamuthu Gounder Mahalingam College</b> (B.Sc CS)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Let's Talk Section -->
+    <section id="contact" class="contact">
+        <h1>Let's Talk</h1>
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-box">
+                <form action="submit_form.php" method="post" onsubmit="return showConfirmation(event)">
+                    <input type="text" name="name" placeholder="First Name" required>
+                    <input type="text" name="lastname" placeholder="Last Name">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>📍 Gandhi park, Covai</p>
+                <p>📧 Darshanmonish@gmail.com</p>
+                <p>📞 +91-9842999913</p>
+                <p>
+                    <img src="images/linkedin-logo.png" alt="LinkedIn Logo" class="social-logo">
+                    LinkedIn: <a href="https://www.linkedin.com/in/darshan-s-a727362a8/" target="_blank">Darshan Monish</a>
+                </p>
+                <p>
+                    <img src="images/instagram-logo.png" alt="Instagram Logo" class="social-logo">
+                    Instagram: <a href="https://www.instagram.com/s.darshan642/" target="_blank">@s.darshan642</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section class="news">
+        <h1>Latest News</h1>
+        <div class="news-grid">
+            <div class="news-item">
+                <img src="assets/images/news1.jpg" alt="News 1">
+                <h3>Attending no fire food making Contest on 12 apr</h3>
+                <p>By Admin - Nov 26, 2020</p>
+            </div>
+            <div class="news-item">
+                <img src="assets/images/news2.jpg" alt="News 2">
+                <h3>Helpful tips for becoming a successful designer</h3>
+                <p>By Admin - Nov 26, 2020</p>
+            </div>
+            <div class="news-item">
+                <img src="assets/images/news3.jpg" alt="News 3">
+                <h3>Helpful tips for becoming a successful designer</h3>
+                <p>By Admin - Nov 26, 2020</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; darshan S| All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
